@@ -1,10 +1,47 @@
 # Refactor-VBA-Stocks
 
 ## Overview of the Project ##
+The project had three goals. 
+- Provide Steve with **an analysis of the green energy stock performance accross the market** to help make an investment decision for his family, 
+- **Review the performance of the *DQ* stock** and generate the recommendation on whether or not invest in it, and 
+- Make sure that the **analysis algorithm is efficient** and is able support the processing of large volumes of stock data. 
 
-[Dataset](https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_2/green_stocks.xlsx)
+Steve has obtained the **[2017 and 2018 stock performance dataset](https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_2/green_stocks.xlsx)**, which is used in this project. 
 
+The dataset includes the following data points:
+
+  - ***Ticker*** - a symbol used to identify publicly traded stocks
+  - ***Date*** - the date of stock trade 
+  - ***Open*** - the openning price of the stock at the beginnign of a trading session on a particular day
+  - ***High*** - highest price of the stock during a trading session on a particular day
+  - ***Low*** - lowest price of the stock during a trading session on a particular day
+  - ***Close*** - the closing price of the stock at the conclusion of a trading session on a particular day
+  - ***Adj.Close*** - adjusted closing price that factors in corporate actions such as dividents, stock splits, and etc. 
+  - ***Volume*** - number of stock shares that have been traded in a session on a particular day
+ 
+The following **metrics** has been generated for each stock ticker in the dataset:
+1. **Total Daily Volume** = the total ***sum*** of the daily stock ***Volumes*** over the period of a year
+2. **Stock Return** = (the ***Close*** price of the stock at the last trading session of a year) / (the ***Open*** price of the stock at the first trading session of a year) ***- 1***
+
+The analysis has been conducted using **VBA** and included **2 interations**. 
+
+The ***first iteration*** of the anaslysis was based on the following algorithm:
+  - Outer loop through each stock Ticker
+    - Inner loop through the entire dataset 
+      - Calculation of the **Total Daily Volume** and **Stock Return** for each **Ticker**
+        - Calculation of the compute time to complete the analysis
+
+The ***second iteration*** of the anaslysis was based on a more efficient algorithm:
+  - Loop through the entire dataset 
+    - Using the TickerIndex counter to keep track of each **Ticker**
+      - Calculation of the **Total Daily Volume** and **Stock Return** for each **Ticker**
+        - Calculation of the compute time to complete the analysis
+        
 ## Results ##
+
+The analysis the dataset has demonstrated that in 2017, most of the green stocks have been profitable with the exception of *TERP*. Also, most of the stocks had large trading volumes, except for *DQ*. The most profitable stocks in 2017 were: *DQ*, *ENPH*, *FSLR*, and *SEDG*.
+
+In 2018, the performance picture has signifacantly changed. Vast majority of the stocks have demonstrated negative profitability, except for *ENPH* and *RUN*. All the volumes have been significant throughout the year.  
 
 ### 2017 Refactored Stock Analysis ###
 
