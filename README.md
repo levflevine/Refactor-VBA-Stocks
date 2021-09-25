@@ -43,9 +43,9 @@ The analysis the dataset has demonstrated that in 2017, most of the green stocks
 
 In 2018, the performance picture has signifacantly changed. Vast majority of the stocks have demonstrated negative profitability, except for *ENPH* and *RUN*. All the volumes have been significant throughout the year.  
 
-The compute times for the ***first*** and ***second*** iterations of the code algorithm were **significantly different**, as follows.
+The compute times for the ***first*** and ***second (refactored)*** iterations of the code algorithm were **significantly different**, as follows.
 
-|             |  **First Iteration**  |  **Second Iteration**  |
+|             |  **First Iteration**  |  **Refactored Iteration**  |
 | ------------|-----------------------|------------------------|
 |    2017     |       **0.83 sec      |      0.13 sec**        |
 |    2018     |       **0.81 sec      |      0.13 sec**        |
