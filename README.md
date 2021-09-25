@@ -1,2 +1,0 @@
-# Refactor-VBA-Stocks
-**Challenge**
