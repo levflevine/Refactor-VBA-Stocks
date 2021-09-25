@@ -4,7 +4,7 @@
 The project had three goals. 
 - Provide Steve with **an analysis of the green energy stock performance accross the market** to help make an investment decision for his family, 
 - **Review the performance of the *DQ* stock** and generate the recommendation on whether or not invest in it, and 
-- Make sure that the **analysis algorithm is efficient** and is able support the processing of large volumes of stock data. 
+- Conduct the **refactoring** of the code to make sure that the **analysis algorithm is efficient** and is able support the processing of large volumes of stock data. 
 
 Steve has obtained the **[2017 and 2018 stock performance dataset](https://2u-data-curriculum-team.s3.amazonaws.com/dataviz-online/module_2/green_stocks.xlsx)**, which is used in this project. 
 
@@ -47,8 +47,8 @@ The compute times for the ***first*** and ***second*** iterations of the code al
 
 |             |  **First Iteration**  |  **Second Iteration**  |
 | ------------|-----------------------|------------------------|
-|    2017     |       **0.83 sec      |      0.14 sec**        |
-|    2018     |       **0.81 sec      |      0.14 sec**        |
+|    2017     |       **0.83 sec      |      0.13 sec**        |
+|    2018     |       **0.81 sec      |      0.13 sec**        |
 
 The results of the analysis and compute times of the **second (refactored) iteration** of the code is shown below.
 
@@ -60,4 +60,22 @@ The results of the analysis and compute times of the **second (refactored) itera
 
 ![Results 2018](/Resources/VBA_Challenge_2018.png)
 
-## Conclusion ##
+## Summary Conclusion ##
+
+**Advantages or disadvantages of refactoring code?**
+
+  ***Pros:***
+  - Reducing the compute times for the code execution
+  - Reducing the memory / storage requirements to run the code
+  - The code gets better organized and structured
+
+  ***Cons:***
+  - No new product features are created (the functions of the app remain the same)
+  - Additional time and resources spent on refactoring (incremental costs)
+  - Risk of adding more bugs to the code that may result in additional testing and debugging efforts (incr. costs)
+
+**How do these pros and cons apply to refactoring the original VBA script in the Project?**
+   1. The refactoring enabled an **83% improvement of the code execution times** in the current project
+   2. The refactoring required **incremental 1 hour of additional coding and debugging efforts**
+ 
+ 
