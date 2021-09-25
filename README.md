@@ -31,7 +31,7 @@ The ***first iteration*** of the anaslysis was based on the following algorithm:
       - Calculation of the **Total Daily Volume** and **Stock Return** for each **Ticker**
         - Calculation of the compute time to complete the analysis
 
-The ***second iteration*** of the anaslysis was based on a more efficient algorithm:
+The ***second iteration*** of the anaslysis was based on a more efficient algorithm developed by **refactoring** the ***first iteration***:
   - Loop through the entire dataset 
     - Using the TickerIndex counter to keep track of each **Ticker**
       - Calculation of the **Total Daily Volume** and **Stock Return** for each **Ticker**
@@ -42,6 +42,15 @@ The ***second iteration*** of the anaslysis was based on a more efficient algori
 The analysis the dataset has demonstrated that in 2017, most of the green stocks have been profitable with the exception of *TERP*. Also, most of the stocks had large trading volumes, except for *DQ*. The most profitable stocks in 2017 were: *DQ*, *ENPH*, *FSLR*, and *SEDG*.
 
 In 2018, the performance picture has signifacantly changed. Vast majority of the stocks have demonstrated negative profitability, except for *ENPH* and *RUN*. All the volumes have been significant throughout the year.  
+
+The compute times for the ***first*** and ***second*** iterations of the code algorithm were **significantly different**, as follows.
+
+|             |  **First Iteration**  |  **Second Iteration**  |
+| ------------|-----------------------|------------------------|
+|    2017     |       **0.83 sec      |      0.14 sec**        |
+|    2018     |       **0.81 sec      |      0.14 sec**        |
+
+The results of the analysis and compute times of the **second (refactored) iteration** of the code is shown below.
 
 ### 2017 Refactored Stock Analysis ###
 
